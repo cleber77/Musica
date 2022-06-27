@@ -14,15 +14,15 @@ const Header =() => {
     const styles = StyleSheet.create({
       
       View:{
-            backgroundColor: 'rgb(0,0,255)',
+            backgroundColor: 'red',
             padding:20,
             width:'100%'
-      },
-        TextStyle:{textAlign:'center',
-        fontSize:30,
+           },
+      
+        TextStyle: {textAlign:'center',
+        fontSize:20,
         color:"#1d076e"
       }
 
-      
     });
     export default Header;
