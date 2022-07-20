@@ -1,20 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
+import  Constant  from 'expo-constants';
 import React from 'react';
-import { StyleSheet, Text, View,Image, Button,ScrollView } from 'react-native';
-import Body from './componente/Body.js';
-import  Header from './componente/Header.js';
+import { StyleSheet, Text, View } from 'react-native';
+import Body from'./componentes/Body.js'
 
-export default class App extends React.Component{
-    
-  render(){
-      return(
-          <ScrollView style ={{marginTop:30,flex:1}}>
-            <Header></Header>
-            <Body></Body>
-          </ScrollView>
-         
-      );
+export  default class App extends React.Component {
+	  
+      constructor(props){
+				super(props);
+        this.body = new Body();
+				this.body.nome ="cleber"
 
-    }
-    
-}
+			  	}
+
+				render(){
+				   return(
+				    	<View style={{marginTop:30}}>
+				      	<Body></Body>
+					</View>	
+					);	
+				}
+			
+			}
+
+
+
+
+				
